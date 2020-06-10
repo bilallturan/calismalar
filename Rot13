@@ -1,0 +1,20 @@
+
+cevirme = str.maketrans('ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz1234567890',
+   '!2£^3#$½?)-\JkuaVn45320=}[)u]6%½{(£^^+%&/jasdhkjIUp6hshd703+½{')
+
+
+while True:
+    a = input("çıkmak için 0 yazınız. devam etmek için başka bir değer giriniz:")
+    if a == "0":
+        print("program kapatılıyor")
+        break
+    def rot13(text):
+        return text.translate(cevirme)
+    def main():
+        sifrelenecek = str(input("lütfen veri giriniz:"))
+        print(("şifrelenecek veriniz:"),sifrelenecek)
+        print(("şifrelenmiş veriniz:"),rot13(sifrelenecek))
+
+    if __name__ == "__main__":
+        main()
+
